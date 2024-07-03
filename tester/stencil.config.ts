@@ -22,8 +22,8 @@ export const config: Config = {
     },
     angularOutputTarget({
       componentCorePackage: '@niup/library-core',
-      directivesProxyFile: './../nc-angular-library-core/projects/nc-library-core/src/libs/stencil-generated/proxies.ts',
-      directivesArrayFile: './../nc-angular-library-core/projects/nc-library-core/src/libs/stencil-generated/index.ts',
+      directivesProxyFile: '../src/libs/stencil-generated/proxies.ts',
+      directivesArrayFile: '../src/libs/stencil-generated/index.ts',
       valueAccessorConfigs: angularValueAccessorBindings,
       outputType: 'component',
     }),
