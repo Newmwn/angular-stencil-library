@@ -21,9 +21,9 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     angularOutputTarget({
-      componentCorePackage: '@niup/library-core',
-      directivesProxyFile: '../src/libs/stencil-generated/proxies.ts',
-      directivesArrayFile: '../src/libs/stencil-generated/index.ts',
+      componentCorePackage: 'tester',
+      directivesProxyFile: '../test-angular/projects/angular-lib/src/libs/stencil-generated/components.ts',
+      directivesArrayFile: '../test-angular/projects/angular-lib/src/libs/stencil-generated/index.ts',
       valueAccessorConfigs: angularValueAccessorBindings,
       outputType: 'component',
     }),
