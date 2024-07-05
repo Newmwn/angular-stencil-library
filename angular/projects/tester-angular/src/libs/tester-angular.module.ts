@@ -1,10 +1,12 @@
 import { APP_INITIALIZER, NgModule } from '@angular/core';
-import { defineCustomElements } from 'tester/loader';
+import { defineCustomElements } from 'tester/dist/loader';
 import { DIRECTIVES } from './stencil-generated';
+defineCustomElements(window);
 
 @NgModule({
-  declarations: [...DIRECTIVES],
+  imports: [],
   exports: [...DIRECTIVES],
+  declarations: [...DIRECTIVES],
   providers: [
     {
       provide: APP_INITIALIZER,
@@ -13,4 +15,4 @@ import { DIRECTIVES } from './stencil-generated';
     },
   ],
 })
-export class ComponentLibraryModule {}
+export class TesterModule {}

@@ -6,7 +6,7 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      esmLoaderPath: '../loader',
+      esmLoaderPath: './loader',
     },
     {
       type: 'dist-custom-elements',
@@ -22,8 +22,8 @@ export const config: Config = {
     },
     angularOutputTarget({
       componentCorePackage: 'tester',
-      directivesProxyFile: '../test-angular/projects/angular-lib/src/libs/stencil-generated/components.ts',
-      directivesArrayFile: '../test-angular/projects/angular-lib/src/libs/stencil-generated/index.ts',
+      directivesProxyFile: '../angular/projects/tester-angular/src/libs/stencil-generated/components.ts',
+      directivesArrayFile: '../angular/projects/tester-angular/src/libs/stencil-generated/index.ts',
       valueAccessorConfigs: angularValueAccessorBindings,
       outputType: 'component',
     }),
